@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkup Solutions | Web, Apps & Security</title>
+    <link rel="icon" type="image/png" href="assets/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="security-bar">
+        <span class="pulse-dot"></span> SYSTEM STATUS: SECURED • 2026 ENCRYPTION
+    </div>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="assets/logo.jpg" alt="Logo" class="nav-logo">
+            <div class="logo-text">LINKUP<span>SOLUTIONS</span></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#project-form" class="cta-nav">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="assets/logo.jpg" alt="Linkup Logo" class="hero-logo">
+        <h1>Connecting Your Digital World</h1>
+        <p>Premium Web Design, Mobile Apps, and Cyber Security by Miiro Derrick & Team.</p>
+        <a href="#project-form" class="cta-btn">Start a Project</a>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Click an image to see details and contact options.</p>
+        <div class="container-grid">
+            <div class="service-card">
+                <div class="img-container"><img src="assets/webdesign.jpg" alt="Web Design"></div>
+                <h3>Web Design</h3>
+                <p>Click for details</p>
+            </div>
+            <div class="service-card">
+                <div class="img-container"><img src="assets/appdev.jpg" alt="App Development"></div>
+                <h3>App Development</h3>
+                <p>Click for details</p>
+            </div>
+            <div class="service-card">
+                <div class="img-container"><img src="assets/cybersec.jpg" alt="Cyber Security"></div>
+                <h3>Cyber Security</h3>
+                <p>Click for details</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h2 class="section-title">Project Gallery</h2>
+        <div class="portfolio-container">
+            <div class="project-card">
+                <img src="assets/project1.jpg" alt="Project 1">
+                <div class="project-overlay"><h4>E-Commerce Platform</h4></div>
+            </div>
+            <div class="project-card">
+                <img src="assets/project2.jpg" alt="Project 2">
+                <div class="project-overlay"><h4>Corporate App</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-form" class="form-section">
+        <div class="form-container">
+            <h2>Work With Us</h2>
+            <form id="linkup-contact-form" action="https://formspree.io/f/linkupsolutions8080@gmail.com" method="POST">
+                <div class="input-group">
+                    <input type="text" name="Full Name" id="user-name" placeholder="Full Name" required>
+                    <input type="email" name="Email" id="user-email" placeholder="Email" required>
+                </div>
+                <select name="Service" id="service-type" required>
+                    <option value="" disabled selected>Choose a Service</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="App Development">App Development</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                </select>
+                <textarea name="Message" id="project-details" placeholder="Project Details..." required></textarea>
+                <div class="form-buttons">
+                    <button type="submit" class="cta-btn">Send Email</button>
+                    <button type="button" id="whatsapp-btn" class="cta-btn secondary">WhatsApp Us</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Linkup Solutions | Founder: Miiro Derrick Wandyaka</p>
+        <div class="icon-group">
+            <a href="https://wa.me/256727775685" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:linkupsolutions8080@gmail.com" class="social-icon"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+            <div class="modal-footer">
+                <div class="modal-buttons">
+                    <button class="cta-btn modal-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                    <button class="cta-btn modal-email secondary-email"><i class="fa-regular fa-envelope"></i> Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
